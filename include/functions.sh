@@ -19,7 +19,6 @@ clone_repo() {
 }
 
 setup_environment() {
-    cd corelab-api-challenge-php-test || return 1
     cp .env.example .env || { msg_error "Failed to copy .env file"; return 1; }
     msg_info "Installing dependencies"
     if docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/var/www/html" -w /var/www/html laravelsail/php83-composer:latest composer install -q --ignore-platform-reqs; then
