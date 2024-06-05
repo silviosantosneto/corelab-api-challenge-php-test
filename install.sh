@@ -5,9 +5,9 @@ set -euo pipefail
 shopt -s inherit_errexit nullglob
 
 # Carregar Funções e Variáveis
-source source <(curl -s https://raw.githubusercontent.com/silviosantosneto/corelab-api-challenge-php-test/main/include/colors.sh)
-source source <(curl -s https://raw.githubusercontent.com/silviosantosneto/corelab-api-challenge-php-test/main/include/messages.sh)
-source source <(curl -s https://raw.githubusercontent.com/silviosantosneto/corelab-api-challenge-php-test/main/include/functions.sh)
+source <(curl -s https://raw.githubusercontent.com/silviosantosneto/corelab-api-challenge-php-test/main/include/colors.sh)
+source <(curl -s https://raw.githubusercontent.com/silviosantosneto/corelab-api-challenge-php-test/main/include/messages.sh)
+source <(curl -s https://raw.githubusercontent.com/silviosantosneto/corelab-api-challenge-php-test/main/include/functions.sh)
 
 # Execução dos comandos fornecidos
 main() {
