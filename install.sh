@@ -5,9 +5,9 @@ set -euo pipefail
 shopt -s inherit_errexit nullglob
 
 # Carregar Funções e Variáveis
-source ./include/colors
-source ./include/messages
-source ./include/functions
+source ./include/colors.sh
+source ./include/messages.sh
+source ./include/functions.sh
 
 # Execução dos comandos fornecidos
 main() {
