@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 header_info() {
   clear
   cat <<"EOF"
